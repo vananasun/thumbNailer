@@ -1,4 +1,4 @@
-# Thumbnailer
+# thumbNailer
 
 This script searches recursively for input JPEG files in the given input
 directory, and generates thumbnails for the images into the output directory.
