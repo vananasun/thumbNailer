@@ -14,4 +14,4 @@ Currently outputs both WEBP and JPEG per thumbnail.
 `generate-thumbs.sh <input directory> <output directory>`
 
 
-*All code by [Maxim van Dijk](maximvandijk.nl).*
+*All code by [Maxim van Dijk](http://maximvandijk.nl).*
