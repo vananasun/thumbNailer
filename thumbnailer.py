@@ -2,6 +2,7 @@ import os
 import sys
 import subprocess
 import shlex
+import time
 
 
 
@@ -15,6 +16,7 @@ sys.argv.pop(0)
 
 
 resolutions = [
+    [ 160 ,   90 ],
     [ 640 ,  360 ],
     [ 1024,  576 ],
     [ 1280,  720 ],
@@ -24,7 +26,7 @@ resolutions = [
     [ 3840, 2160 ]
 ]
 extensions = [ 'webp', 'jpg' ]
-quality = 75
+quality = 50
 
 
 
@@ -33,7 +35,8 @@ for filepath in sys.argv:
         for ext in extensions:
             outputpath = output_dir + "/" + os.path.splitext(os.path.basename(filepath))[0]
             outputpath += '_' + str(size[0]) + 'x' + str(size[1]) + '.' + ext
-            print("Processing " + filepath + " to " + outputpath)
+            # print("Processing " + filepath + " to " + outputpath)
+            os.system('echo ' + "Processing " + filepath + " to " + outputpath)
 
             args = "convert ";
             args += "-resize \""+str(size[0])+"x"+str(size[1])+"^\" "
