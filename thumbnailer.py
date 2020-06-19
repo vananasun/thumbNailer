@@ -35,6 +35,7 @@ for filepath in sys.argv:
         for ext in extensions:
             outputpath = output_dir + "/" + os.path.splitext(os.path.basename(filepath))[0]
             outputpath += '_' + str(size[0]) + 'x' + str(size[1]) + '.' + ext
+            
             # print("Processing " + filepath + " to " + outputpath)
             os.system('echo ' + "Processing " + filepath + " to " + outputpath)
 
